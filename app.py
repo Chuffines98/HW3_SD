@@ -29,7 +29,7 @@ def result():
 		denom = (interestRate * (1 + interestRate)**timeToRepay)
 		D = (num/ denom)  
 		monthlyPayments = principal / D
-		monthlyPayments.=locale.currency(monthlyPayments)
+		monthlyPayments =locale.currency(monthlyPayments)
 		return render_template('index.html', pageTitle="New Title", result=monthlyPayments)
 		
 	if request.method == 'GET':
